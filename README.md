@@ -1,27 +1,105 @@
-# Challenge
+# 📘 Blog Angular - Static Blog Challenge Of sithec
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+This project is a static blog application built with **Angular 15** and **Angular Material**, as part of a development challenge.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Landing page with a responsive list of blog posts.
+- Post detail view with full content.
+- Routing between views.
+- Navigation bar with Material Design.
+- Posts managed via a mock service.
+- Use of `@Input()` and `@Output()`.
+- Bonus features:
+  - Animations when displaying post detail.
+  - Last viewed post stored in `localStorage`.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Requirements
 
-## Build
+- Node.js 16.x (recommended: `16.20.2`)
+- Angular CLI 15
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+You can install Node.js using [nvm](https://github.com/nvm-sh/nvm):
 
-## Running unit tests
+```bash
+nvm install 16.20.2
+nvm use 16.20.2
+npm install -g @angular/cli@15
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📦 Install Dependencies
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
+```
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 💻 Development server
+
+```bash
+ng serve
+```
+
+Navigate to `http://localhost:4200/`.
+
+The app will automatically reload if you change any of the source files.
+
+---
+
+## 🏗 Build
+
+```bash
+ng build
+```
+
+Build artifacts will be stored in the `dist/` directory.
+
+---
+
+## 🧪 Testing
+
+- **Unit tests**: `ng test`
+- **E2E tests**: `ng e2e` *(requires configuration)*
+
+---
+
+## 📁 Project Structure Highlights
+
+```
+src/
+  app/
+    core/               // Navbar and shared layout
+    pages/
+      blog/             // Feature module
+        components/
+          post-list/
+          post-card/
+          post-detail/
+        models/
+        services/
+        blog-routing.module.ts
+        blog.module.ts
+    app.component.ts
+    app-routing.module.ts
+```
+
+---
+
+## 📬 Submission
+
+Please clone or download the project and run using the instructions above.  
+Alternatively, you can view the source code in the repository provided.
+
+---
+
+## ✍️ Author
+
+Developed by **Juan Rogelio Franco Martinez**
+[portfolio](https://juanrofranco.com/)
+
+---
