@@ -73,15 +73,15 @@ Build artifacts will be stored in the `dist/` directory.
 ```
 src/
   app/
-    core/               // Navbar and shared layout
-    pages/
-      blog/             // Feature module
+    core/
         components/
-          post-list/
-          post-card/
-          post-detail/
         models/
         services/
+    pages/
+      blog/             // Feature module
+        post-list/
+        post-card/
+        post-detail/
         blog-routing.module.ts
         blog.module.ts
     app.component.ts
