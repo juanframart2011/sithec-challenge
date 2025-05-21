@@ -1,1 +1,10 @@
-<p>post-detail works!</p>
+<div class="post-detail" *ngIf="post" [@fadeIn]>
+  <img [src]="post.image" [alt]="post.title" class="featured-image" />
+
+  <h1>{{ post.title }}</h1>
+  <p class="date">{{ post.date }}</p>
+
+  <p class="content">{{ post.content }}</p>
+
+  <button mat-stroked-button color="primary" (click)="goBack()">← Volver</button>
+</div>
